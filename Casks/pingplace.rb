@@ -10,4 +10,8 @@ cask "pingplace" do
   depends_on macos: ">= :ventura"
 
   app "PingPlace.app"
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/PingPlace.app"]
+  end
 end
