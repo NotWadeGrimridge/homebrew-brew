@@ -12,6 +12,6 @@ cask "pingplace" do
   app "PingPlace.app"
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/PingPlace.app"]
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/PingPlace.app"], must_succeed: false
   end
 end
