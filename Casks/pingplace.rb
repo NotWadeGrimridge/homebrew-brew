@@ -1,6 +1,6 @@
 cask "pingplace" do
-  version "1.1.0"
-  sha256 "f3c22fc104325039c56fcdf34b52ebd4efe8887899608f7874aadd3b9dc2262f"
+  version "1.2.0"
+  sha256 "b22dc261e899532b3b255ef6da887e0ca10523a5fc975b7ff3af2642ee161d27"
 
   url "https://github.com/NotWadeGrimridge/PingPlace/releases/download/v#{version}/PingPlace.app.tar.gz"
   name "PingPlace"
