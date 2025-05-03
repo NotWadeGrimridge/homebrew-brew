@@ -11,6 +11,11 @@ cask "pingplace" do
 
   app "PingPlace.app"
 
+  zap trash: [
+    "~/Library/LaunchAgents/com.grimridge.PingPlace.plist",
+    "~/Library/Preferences/com.grimridge.PingPlace.plist",
+  ]
+
   caveats <<~EOS
     If you're upgrading from version 1.0 to 1.1, please remove PingPlace from
     System Settings > Privacy & Security > Accessibility when prompted and
