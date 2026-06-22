@@ -7,7 +7,7 @@ cask "pingplace" do
   desc "Control where notifications appear on your screen."
   homepage "https://github.com/NotWadeGrimridge/PingPlace"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "PingPlace.app"
 
